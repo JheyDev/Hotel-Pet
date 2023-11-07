@@ -80,6 +80,8 @@ h6 {
   }
 }
 
+
+
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
@@ -318,7 +320,7 @@ section {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(--color-primary);
+    background-color: green;
     visibility: hidden;
     transition: all 0.3s ease-in-out 0s;
     transform: scaleX(0);
@@ -336,7 +338,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: var(--color-primary);
+    color: green;
   }
 
   .navbar .dropdown a:hover:before,
@@ -1081,7 +1083,7 @@ section {
 .featured-services .service-item h4 {
   font-weight: 600;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 19px;
 }
 
 .featured-services .service-item h4 a {
@@ -1101,7 +1103,26 @@ section {
 }
 
 .featured-services .service-item:hover h4 a {
-  color: var(--color-primary);
+  color: red
+}
+
+
+
+
+
+.featured-services .colorclick:hover h4 a {
+  color: #fffcfd
+}
+
+
+
+
+
+
+.imgdalogo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* Espaço à direita da imagem */
 }
 
 /*--------------------------------------------------------------
@@ -1870,6 +1891,14 @@ section {
     padding: 0;
   }
 }
+
+.imgdalogo {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+   border-radius: 50%;
+}
+
 
 .faq .content h3 {
   font-weight: 400;
@@ -3181,4 +3210,128 @@ section {
 .footer .footer-legal .social-links a:hover {
   background: var(--color-primary);
   text-decoration: none;
+}
+
+.botaofaleconoscorosa {
+  font-size: 15px;
+  color: var(--color-white);
+  background: #D92958;
+  padding: 5px 20px;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+  text-align: center; /* Centraliza o texto horizontalmente */
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+}
+
+.botaofaleconoscoazul {
+  font-size: 15px;
+  color: var(--color-white);
+  background: #274F73;
+  padding: 5px 20px;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+  text-align: center; /* Centraliza o texto horizontalmente */
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+}
+
+.botaofaleconoscoverde {
+  font-size: 15px;
+  color: var(--color-white);
+  background: #2C7330;
+  padding: 5px 20px;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+  text-align: center; /* Centraliza o texto horizontalmente */
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+}
+
+.botaofaleconoscoamarelo {
+  font-size: 15px;
+  color: var(--color-white);
+  background: #D9B60B;
+  padding: 5px 20px;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+  text-align: center; /* Centraliza o texto horizontalmente */
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+}
+
+
+
+
+
+.botaofaleconoscorosa:hover {
+  font-size: 15px;
+  color: var(--color-white);
+  background: #D92958;
+  padding: 5px 20px;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+  text-align: center; /* Centraliza o texto horizontalmente */
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+}
+
+.botaofaleconoscoazul:hover {
+  font-size: 15px;
+  color: var(--color-white);
+  background: #274F73;
+  padding: 5px 20px;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+  text-align: center; /* Centraliza o texto horizontalmente */
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+}
+
+.botaofaleconoscoverde:hover {
+  font-size: 15px;
+  color: var(--color-white);
+  background: #2C7330;
+  padding: 5px 20px;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+  text-align: center; /* Centraliza o texto horizontalmente */
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
+}
+
+.botaofaleconoscoamarelo:hover {
+  font-size: 15px;
+  color: var(--color-white);
+  background: #D9B60B;
+  padding: 5px 20px;
+  border-radius: 4px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+  text-align: center; /* Centraliza o texto horizontalmente */
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza vertical e horizontalmente */
 }
