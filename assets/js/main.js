@@ -8,6 +8,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
+  
+
   /**
    * Preloader
    */
@@ -53,6 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   window.addEventListener('load', navbarlinksActive);
   document.addEventListener('scroll', navbarlinksActive);
+  
+
+function changeImage(imageSrc) {
+  var imageElement = document.getElementById("about-image");
+  imageElement.src = "assets/img/" + imageSrc;
+}
+
 
   /**
    * Function to scroll to an element with top ofset

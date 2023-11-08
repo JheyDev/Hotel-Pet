@@ -1193,9 +1193,9 @@ section {
 }
 
 .about .nav-link.active {
-  color: var(--color-primary);
+  color: green;
   background: none;
-  border-bottom: 3px solid var(--color-primary);
+  border-bottom: 3px solid green;
 }
 
 @media (max-width: 575px) {
@@ -1358,7 +1358,7 @@ section {
 
 .features .nav-link h4 {
   font-size: 20px;
-  font-weight: 600;
+    font-weight: 600;
   margin: 10px 0 0 0;
   color: var(--color-secondary);
 }
@@ -1369,8 +1369,9 @@ section {
 
 .features .nav-link.active {
   transition: 0.3s;
-  background: var(--color-secondary) linear-gradient(rgba(var(--color-primary-rgb), 0.95), rgba(var(--color-primary-rgb), 0.6));
+  background: linear-gradient(rgba(0, 128, 0, 0.816),rgba(1, 48, 1, 0.786));
   border-color: var(--color-primary);
+  border-radius: 20%;
 }
 
 .features .nav-link.active h4 {
