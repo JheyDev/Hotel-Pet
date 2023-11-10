@@ -305,3 +305,20 @@ function changeImage(imageSrc) {
   });
 
 });
+
+
+function mostrarConteudo(titulo, descricao) {
+  // Obtém a referência ao elemento de descrição
+  var descricaoElement = document.getElementById('descricao');
+  
+  // Limpa qualquer conteúdo existente
+  descricaoElement.innerHTML = '';
+  
+  // Adiciona a nova descrição
+  var paragrafo = document.createElement('p');
+  paragrafo.textContent = descricao;
+  descricaoElement.appendChild(paragrafo);
+
+  // Exibe a descrição
+  descricaoElement.style.display = 'block';
+}

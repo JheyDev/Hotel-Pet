@@ -198,7 +198,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 995;
-  background: var(--color-primary);
+  background: rgba(0, 128, 0, 0.578);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -212,7 +212,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: rgba(var(--color-primary-rgb), 0.85);
+  background: green;
   color: var(--color-white);
 }
 
@@ -229,6 +229,17 @@ section {
     transition-delay: 0 !important;
   }
 }
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none; /* Remover sublinhado padrão dos links */
+}
+
+a:hover {
+  color:green; /* Substitua 'red' pela cor desejada ao passar o mouse */
+}
+
+
 
 /*--------------------------------------------------------------
 # Header
@@ -265,7 +276,7 @@ section {
 .header .btn-getstarted:focus {
   font-size: 16px;
   color: var(--color-white);
-  background: #297334;
+  background: #29733475;
   padding: 8px 23px;
   border-radius: 4px;
   transition: 0.3s;
@@ -275,7 +286,7 @@ section {
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
   color: var(--color-white);
-  background: rgba(var(--color-primary-rgb), 0.85);
+  background: green;
 }
 
 @media (max-width: 1279px) {
@@ -890,6 +901,25 @@ section {
     transform: translate3d(0, 0, 0);
   }
 }
+
+.icon-container {
+  text-align: center;
+}
+
+.icon {
+  /* Para Font Awesome ou outros ícones */
+  font-size: 30px;
+  margin-right: 10px;
+  color: rgba(0, 128, 0, 0.549);
+  transition: color 0.3s; /* Adiciona uma transição suave de 0.3 segundos */
+}
+
+.icon:hover {
+  color: green; /* A cor que o ícone terá ao passar o mouse */
+}
+
+
+
 
 /*--------------------------------------------------------------
 # Fullscreen Hero Section
@@ -1877,31 +1907,59 @@ section {
   margin: 0 auto 30px auto;
   list-style: none;
   text-align: center;
+  font-weight: bold; /* ou 700; */  
+  
 }
+
+.portfolio {
+  position: relative;
+  font-weight: bold; /* ou 700; */ 
+   
+}
+
+.portfolio::before {
+  content: "";
+  background-image: url("../img/food.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1; /* Ajuste o valor de acordo com a transparência desejada (de 0 a 1) */
+  z-index: -1; /* Para garantir que a pseudo-classe esteja atrás do conteúdo do elemento */
+
+}
+
+
 
 .portfolio .portfolio-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 0;
   font-size: 18px;
-  font-weight: 300;
-  margin: 0 10px;
+    margin: 0 10px;
   line-height: 1;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
+  font-weight: bold; /* ou 700; */  
+  
 }
 
 .portfolio .portfolio-flters li:hover,
 .portfolio .portfolio-flters li.filter-active {
-  color: var(--color-primary);
+  color: green;
+  font-weight: bold; /* ou 700; */ 
+   
 }
 
 .portfolio .portfolio-flters li:first-child {
   margin-left: 0;
+    font-weight: bold; /* ou 700; */  
 }
 
 .portfolio .portfolio-flters li:last-child {
   margin-right: 0;
+  font-weight: bold; /* ou 700; */  
 }
 
 @media (max-width: 575px) {
@@ -1916,6 +1974,7 @@ section {
   border: 1px solid var(--color-white);
   overflow: hidden;
   z-index: 1;
+  
 }
 
 .portfolio .portfolio-item img {
@@ -1983,6 +2042,8 @@ section {
   opacity: 1;
   inset: auto 10px 0 10px;
 }
+
+
 
 /*--------------------------------------------------------------
 # Team Section
@@ -2073,6 +2134,7 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -2125,7 +2187,7 @@ section {
 
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 700px;
   margin-bottom: 20px;
 }
 
